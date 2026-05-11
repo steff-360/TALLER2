@@ -1,290 +1,48 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+/* =========================
+   MOBILE PREMIUM EFFECTS
+========================= */
 
-:root {
-    --bg-color: #050816;
-    --card-color: #0f172a;
-    --primary: #4f46e5;
-    --secondary: #8b5cf6;
-    --text: #ffffff;
-    --gray: #94a3b8;
-}
+@media screen and (max-width: 900px) {
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--bg-color);
-    color: var(--text);
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    background: rgba(0,0,0,0.4);
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo i {
-    color: var(--secondary);
-    font-size: 24px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--secondary);
-}
-
-#themeToggle {
-    background: var(--primary);
-    border: none;
-    color: white;
-    padding: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.hero {
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1600') center/cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.7);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 20px;
-}
-
-.hero-content h2 {
-    font-size: 70px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 20px;
-    color: #cbd5e1;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    padding: 15px 35px;
-    border-radius: 40px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px);
-}
-
-.section {
-    padding: 120px 8%;
-}
-
-.dark-section {
-    background: #020617;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.section-title h2 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.section-title p {
-    color: var(--gray);
-}
-
-.apod-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.apod-container img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-}
-
-#apod-image{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
-    display: block;
-}
-
-.apod-info h3 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.apod-info p {
-    line-height: 1.8;
-    color: #cbd5e1;
-}
-
-.asteroid-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.asteroid-card {
-    background: var(--card-color);
-    padding: 30px;
-    border-radius: 20px;
-    transition: 0.3s;
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.asteroid-card:hover {
-    transform: translateY(-10px);
-}
-
-.asteroid-card h3 {
-    margin-bottom: 15px;
-}
-
-.asteroid-card p {
-    color: #cbd5e1;
-    margin-bottom: 10px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.03);
-}
-
-.about-section {
-    padding: 120px 8%;
-    background: linear-gradient(135deg, #0f172a, #020617);
-}
-
-.about-content {
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
-.about-content h2 {
-    font-size: 42px;
-    margin-bottom: 30px;
-}
-
-.about-content p {
-    line-height: 1.8;
-    color: #cbd5e1;
-}
-
-.tech-stack {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.tech-stack span {
-    background: var(--primary);
-    padding: 12px 25px;
-    border-radius: 30px;
-}
-
-#gallery-grid img {
-    cursor: pointer;
-}
-
-#gallery-grid img:hover {
-    box-shadow: 0 10px 40px rgba(139,92,246,0.5);
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    background: black;
-}
-
-.light-mode {
-    --bg-color: #f8fafc;
-    --card-color: white;
-    --text: #0f172a;
-    --gray: #475569;
-}
-
-@media(max-width: 900px) {
-
-    .nav-links {
-        display: none;
+    body {
+        overflow-x: hidden;
     }
 
-    .hero-content h2 {
-        font-size: 48px;
+    header {
+        padding-bottom: 10px;
     }
 
-    .apod-container {
-        grid-template-columns: 1fr;
+    .navbar {
+        background: rgba(5, 8, 22, 0.95);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .asteroid-card {
+        padding: 25px;
+    }
+
+    .asteroid-card h3 {
+        font-size: 20px;
+    }
+
+    .apod-info p {
+        font-size: 15px;
+    }
+
+    .gallery-grid {
+        gap: 18px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tech-stack {
+        justify-content: center;
     }
 }
