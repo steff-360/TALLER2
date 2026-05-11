@@ -52,7 +52,7 @@ async function getAPOD() {
 
         apodTitle.textContent = data.title;
         apodDate.textContent = data.date;
-        apodDescription.textContent = data.explanation;
+        apodDescription.textContent = data.Explanation;
 
     } catch (error) {
 
