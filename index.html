@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Space Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2d9d5a54f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-rocket"></i>
+                <h1>NASA Explorer</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#apod">APOD</a></li>
+                <li><a href="#asteroids">Asteroides</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#about">Acerca...</a></li>
+                <li><a href="#missions">Misiones</a></li>
+                <li><a href="#stats">Estadísticas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <button id="themeToggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h2>Explora el Universo</h2>
+            <p>
+                Descubre imágenes astronómicas, asteroides cercanos y datos espaciales en tiempo real usando la API oficial de NASA.
+            </p>
+
+            <a href="#apod" class="btn-primary">
+                Explorar Ahora
+            </a>
+        </div>
+    </section>
+
+
+    <!-- APOD -->
+
+    <section class="section" id="apod">
+        <div class="section-title">
+            <h2>🌌 Imagen Astronómica del Día</h2>
+            <p>Contenido oficial proporcionado por NASA</p>
+        </div>
+
+        <div class="apod-container">
+            <img id="apod-image" src="" alt="NASA APOD">
+            <img id="apod-image"
+    src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1600"
+    alt="NASA APOD"
+/>
+
+            <div class="apod-info">
+                <h3 id="apod-title"></h3>
+                <p id="apod-date"></p>
+                <p id="apod-description"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ASTEROIDS -->
+
+    <section class="section dark-section" id="asteroids">
+        <div class="section-title">
+            <h2>☄️ Asteroides Cercanos</h2>
+            <p>Objetos espaciales monitoreados por NASA</p>
+        </div>
+
+        <div class="asteroid-grid" id="asteroid-grid"></div>
+    </section>
+
+
+    <!-- GALLERY -->
+
+    <section class="section" id="gallery">
+        <div class="section-title">
+            <h2>🛰️ Galería Espacial</h2>
+            <p>Imágenes del universo</p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </section>
+
+
+    <!-- MISSIONS -->
+
+    <section class="section dark-section" id="missions">
+        <div class="section-title">
+            <h2>🚀 Misiones Espaciales</h2>
+            <p>Explora algunos de los proyectos más importantes de NASA</p>
+        </div>
+
+        <div class="asteroid-grid">
+
+            <div class="asteroid-card">
+                <h3>Artemis</h3>
+                <p>
+                    Programa espacial que busca llevar nuevamente astronautas a la Luna y preparar futuras misiones a Marte.
+                </p>
+            </div>
+
+            <div class="asteroid-card">
+                <h3>James Webb</h3>
+                <p>
+                    Telescopio espacial diseñado para observar galaxias antiguas y explorar el origen del universo.
+                </p>
+            </div>
+
+            <div class="asteroid-card">
+                <h3>Perseverance</h3>
+                <p>
+                    Rover enviado a Marte para investigar signos de vida y analizar el planeta rojo.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- STATS -->
+
+    <section class="section" id="stats">
+        <div class="section-title">
+            <h2>📊 Estadísticas Espaciales</h2>
+            <p>Datos interesantes del universo</p>
+        </div>
+
+        <div class="asteroid-grid">
+
+            <div class="asteroid-card">
+                <h3>🌍 Distancia Tierra - Luna</h3>
+                <p>384,400 km</p>
+            </div>
+
+            <div class="asteroid-card">
+                <h3>☀️ Edad del Sol</h3>
+                <p>4.6 mil millones de años</p>
+            </div>
+
+            <div class="asteroid-card">
+                <h3>🌌 Galaxias Estimadas</h3>
+                <p>Más de 2 billones</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2>Sobre el Proyecto</h2>
+
+            <p>
+                NASA Space Explorer es una aplicación web interactiva desarrollada con HTML, CSS y JavaScript.
+                Utiliza APIs públicas de NASA para mostrar información espacial en tiempo real.
+            </p>
+
+            <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>NASA API</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+
+<section class="section dark-section" id="contact">
+    
+    <div class="section-title">
+        <h2>📩 Contacto</h2>
+        <p>Información del desarrollador del Taller 2 Api</p>
+    </div>
+
+    <div class="about-content">
+
+        <div class="tech-stack">
+            <span>📧 nasaexplorer@email.com</span>
+            <span>🌎 Guatemala</span>
+            <span>🚀 Taller 2 Api</span>
+        </div>
+
+        <p style="margin-top:40px;">
+            Este taller fue desarrollado con HTML, CSS y JavaScript
+            utilizando APIs oficiales de NASA.
+        </p>
+
+        <a href="#home"
+           class="btn-primary"
+           style="margin-top:40px; display:inline-block;">
+           
+           Volver al Inicio
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>
+            © 2026 NASA Space Explorer | Proyecto Académico
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
