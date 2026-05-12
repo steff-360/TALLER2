@@ -1,0 +1,113 @@
+#  NASA Space Explorer  
+### Taller 2 — Proyecto API de Elección Libre
+
+![NASA Space Explorer](https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1600)
+
+---
+
+#  Información del Camper
+
+| Dato | Información |
+|---|---|
+| Nombre | Stefani Sánchez |
+| Proyecto | NASA Space Explorer |
+| Taller | Taller 2 — API de Elección Libre |
+| Tecnologías | HTML5, CSS3 y JavaScript |
+| Tipo | Aplicación Web Interactiva |
+
+---
+
+#  Descripción del Proyecto
+
+NASA Space Explorer es una aplicación web interactiva desarrollada con **HTML, CSS y JavaScript**, diseñada para consumir APIs oficiales de NASA y mostrar información astronómica en tiempo real mediante una interfaz moderna y futurista.
+
+La aplicación obtiene datos dinámicamente desde servidores externos utilizando solicitudes HTTP con Fetch API.
+
+El proyecto fue desarrollado como parte del **Taller 2 — API de Elección Libre**, aplicando conceptos fundamentales de desarrollo frontend y consumo de APIs REST.
+
+---
+
+#  Objetivo del Proyecto
+
+Desarrollar una aplicación web funcional capaz de consumir una API pública y mostrar información dinámica mediante JavaScript puro.
+
+---
+
+#  Funcionalidades Implementadas
+
+#  Imagen Astronómica del Día (APOD)
+
+La aplicación obtiene automáticamente la imagen astronómica diaria proporcionada por NASA.
+
+## Información mostrada:
+- Imagen HD
+- Título
+- Fecha
+- Descripción científica
+
+---
+
+#  Asteroides Cercanos
+
+Visualización dinámica de objetos cercanos a la Tierra.
+
+## Datos mostrados:
+- Nombre del asteroide
+- Tamaño estimado
+- Velocidad
+- Riesgo potencial
+
+---
+
+#  Galería Espacial Dinámica
+
+Carga automática de imágenes espaciales utilizando NASA Image Library API.
+
+## Características:
+ Más de 30 imágenes  
+ Imágenes clickeables  
+ Lazy loading  
+ Responsive Design  
+
+---
+
+#  Misiones Espaciales
+
+Sección informativa sobre proyectos importantes de NASA:
+
+- Artemis
+- James Webb Telescope
+- Perseverance Rover
+
+---
+
+#  Estadísticas Espaciales
+
+La aplicación muestra información relacionada con el universo y astronomía.
+
+---
+
+#  Dark Mode
+
+Implementación de modo oscuro utilizando JavaScript y variables CSS.
+
+---
+
+#  Responsive Design
+
+La aplicación fue optimizada para:
+
+ Celulares  
+ Tablets  
+ Computadoras  
+
+---
+
+#  API Utilizada
+
+##  NASA API
+
+Documentación oficial:
+
+```bash
+https://api.nasa.gov/
